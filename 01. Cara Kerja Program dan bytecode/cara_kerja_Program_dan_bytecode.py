@@ -1,3 +1,7 @@
+import time
+
+startTime = time.time()
+
 print('halo')
 
 """
@@ -8,3 +12,6 @@ python -m py_compile (nama file).py
 linux/mac :
 python -m py_compile (nama file).py
 """
+
+# Menghitung kecepatan exsekusi bytecode dg interpreter
+print(time.time() - startTime, 'detik')
