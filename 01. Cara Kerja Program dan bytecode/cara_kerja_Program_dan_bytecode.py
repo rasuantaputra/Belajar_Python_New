@@ -4,15 +4,9 @@ startTime = time.time()
 
 print('halo')
 
-print('1')
-print('2')
-print('3')
-print('4')
-print('5')
-print('6')
-print('7')
-print('8')
-print('9')
+for i in range(0,9000):
+    print(i)
+    
 
 """
 command untuk mengubah ke bytecode
