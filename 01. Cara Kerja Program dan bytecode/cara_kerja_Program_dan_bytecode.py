@@ -5,7 +5,7 @@ startTime = time.time()
 print('halo')
 
 for i in range(0,9000):
-    a = i
+    print(i)
     
 
 """
