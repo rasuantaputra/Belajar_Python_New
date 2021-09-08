@@ -14,3 +14,8 @@ print('data = ', data_int, 'tipe : ', type(data_int))
 print('data = ', data_float, 'tipe : ', type(data_float))
 print('data = ', data_str, 'tipe : ', type(data_str))
 print('data = ', data_bool, 'tipe : ', type(data_bool))
+
+"""
+catatan untu casting 
+kalo data nya string, dia harus angka biar bisa di casting
+"""
