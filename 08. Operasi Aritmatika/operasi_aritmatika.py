@@ -67,3 +67,14 @@ while True:
         break
     else:
         print('PILIH YANG BENER !!!')
+
+# ===Keterangan Prioritas Operasi ===
+"""
+Prioritas operasi sama dengan pengoprasian di dunia nyata 
+
+urutannya gini :
+1. () => yg ada kurungnya
+2. exponen
+3. Perkalian / pembagian
+4. Penjumlahan / Pengurangan
+"""
