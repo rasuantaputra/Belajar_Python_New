@@ -41,27 +41,49 @@ def prioritasOperasi (a,b,c):
     return print('Hasilnya adalah : ' , a ** b * c + a / b - b % c // a)
 
 def operasiBilangan(pilihan):
-    if pilihan is '1':
+    if (pilihan == '1'):
         jumlah(a,b)
-    elif pilihan == '2':
+    elif (pilihan == '2'):
         kurang(a,b)
-    elif (pilihan is '3'):
+    elif (pilihan == '3'):
         kali(a,b)
     elif (pilihan == '4'):
         bagi(a,b)
-    elif pilihan is '5':
+    elif (pilihan == '5'):
         pangkat(a,b)
-    elif pilihan == '6':
+    elif (pilihan == '6'):
         modula (a,b)
-    elif pilihan == '7':
+    elif (pilihan == '7'):
         floorDevision (a,b)
-    elif pilihan == '8':
+    elif (pilihan == '8'):
         c = float(input('Masukan angka ke-3 = '))
         prioritasOperasi (a,b,c)
-
+    else:
+        print('PILIH YANG BENER !!!')
     
 
 pilihan = input('Pilih nomor berapa ? : ')
+
+
+# if (pilihan == '1'):
+#     jumlah(a,b)
+# elif (pilihan == '2'):
+#     kurang(a,b)
+# elif (pilihan == '3'):
+#     kali(a,b)
+# elif (pilihan == '4'):
+#     bagi(a,b)
+# elif (pilihan == '5'):
+#     pangkat(a,b)
+# elif (pilihan == '6'):
+#     modula (a,b)
+# elif (pilihan == '7'):
+#     floorDevision (a,b)
+# elif (pilihan == '8'):
+#     c = float(input('Masukan angka ke-3 = '))
+#     prioritasOperasi (a,b,c)
+# else:
+#     print('PILIH YANG BENER !!!')
 
 
 
