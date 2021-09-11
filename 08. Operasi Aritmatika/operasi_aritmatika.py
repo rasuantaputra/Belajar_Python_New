@@ -1,7 +1,8 @@
 a = float(input('Masukan angka ke-1 = '))
 b = float(input('Masukan angka ke-2 = '))
 
-def pilih() : 
+
+def pilih():
     print('=== Pilih Operasi Aritmatika di Bawah ini : ===')
     print('1. Jumlah')
     print('2. Kurang')
@@ -16,57 +17,66 @@ def pilih() :
 
 pilih()
 
-def jumlah (a,b):
-    return print('Hasilnya adalah : ' , a + b)
 
-def kurang (a,b):
-    return print('Hasilnya adalah : ' , a - b)
+def jumlah(a, b):
+    return print('Hasilnya adalah : ', a + b)
 
-def kali (a,b):
-    return print('Hasilnya adalah : ' , a * b)
 
-def bagi (a,b):
-    return print('Hasilnya adalah : ' , a / b)
+def kurang(a, b):
+    return print('Hasilnya adalah : ', a - b)
 
-def pangkat (a,b):
-    return print('Hasilnya adalah : ' , a ** b)
 
-def modula (a,b):
-    return print('Hasilnya adalah : ' , a % b)
+def kali(a, b):
+    return print('Hasilnya adalah : ', a * b)
 
-def floorDevision (a,b):
-    return print('Hasilnya adalah : ' , a // b)
 
-def prioritasOperasi (a,b,c):
-    return print('Hasilnya adalah : ' , a ** b * c + a / b - b % c // a)
+def bagi(a, b):
+    return print('Hasilnya adalah : ', a / b)
 
-def operasiBilangan(pilihan):
-    if (pilihan == 1):
-        jumlah(a,b)
-    elif (pilihan == 2):
-        kurang(a,b)
-    elif (pilihan == 3):
-        kali(a,b)
-    elif (pilihan == 4):
-        bagi(a,b)
-    elif (pilihan == 5):
-        pangkat(a,b)
-    elif (pilihan == 6):
-        modula (a,b)
-    elif (pilihan == 7):
-        floorDevision (a,b)
-    elif (pilihan == 8):
-        c = float(input('Masukan angka ke-3 = '))
-        prioritasOperasi (a,b,c)
-    
+
+def pangkat(a, b):
+    return print('Hasilnya adalah : ', a ** b)
+
+
+def modula(a, b):
+    return print('Hasilnya adalah : ', a % b)
+
+
+def floorDevision(a, b):
+    return print('Hasilnya adalah : ', a // b)
+
+
+def prioritasOperasi(a, b, c):
+    return print('Hasilnya adalah : ', a ** b * c + a / b - b % c // a)
+
+
 while True:
     pilihan = int(input('Pilih nomor berapa ? : '))
 
-    if (pilihan in range(1,9)):
-        operasiBilangan(pilihan)
-        break
-    else:
-        print('PILIH YANG BENER !!!')
+    if (pilihan in range(1, 9)):
+        if (pilihan == 1):
+            jumlah(a, b)
+            break
+        elif (pilihan == 2):
+            kurang(a, b)
+            break
+        elif (pilihan == 3):
+            kali(a, b)
+            break
+        elif (pilihan == 4):
+            bagi(a, b)
+            break
+        elif (pilihan == 5):
+            pangkat(a, b)
+            break
+        elif (pilihan == 6):
+            modula(a, b)
+            break
+        elif (pilihan == 7):
+            floorDevision(a, b)
+            break
+        else:
+            print('PILIH YANG BENER !!!')
 
 # ===Keterangan Prioritas Operasi ===
 """
